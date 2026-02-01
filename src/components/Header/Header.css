@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   width: 90vw;
+  padding: 0 2rem;
+  top: 0;
 }
 
 .logo-links {
@@ -13,4 +15,9 @@
 
 .header-logo {
   margin-right: 0.5rem;
+}
+
+.header {
+  border-bottom: solid 2px black;
+  width: 100%;
 }

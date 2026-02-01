@@ -1,0 +1,27 @@
+.dog-li {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  border: solid 1px grey;
+  border-radius: 2vw;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.dog-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.dog-img {
+  margin: 0;
+}
+
+.dog-info {
+  padding: 0 0.2rem;
+}
+
+.material-symbols-outlined {
+  margin: 0.3rem;
+}

@@ -5,9 +5,9 @@ function DonatePage() {
     <>
       <h2>Donate</h2>
       <form action="fill">
-        <input type="text" placeholder="För- och efternamn" />
+        <input type="text" placeholder="First- and lastname" />
         <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Telefonnummer för swish" />
+        <input type="text" placeholder="Phone nr for swish" />
       </form>
       <button>Donate</button>
     </>

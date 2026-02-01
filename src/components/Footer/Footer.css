@@ -1,0 +1,10 @@
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.info-section {
+  margin: 0.3rem 0.5rem;
+}
