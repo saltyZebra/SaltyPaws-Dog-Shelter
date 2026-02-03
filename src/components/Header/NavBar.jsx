@@ -8,9 +8,8 @@ function NavBar() {
     <>
       <nav className="nav-bar">
         <section className="logo-links">
-          <HeaderLogo />
-          <NavLink to={"/"}>Home</NavLink> |{" "}
-          <NavLink to={"/ourdogs"}>Our Dogs</NavLink> |{" "}
+          <HeaderLogo /> |<NavLink to={"/"}>Home</NavLink> |
+          <NavLink to={"/ourdogs"}>Our Dogs</NavLink> |
           <NavLink to={"/becomeapart"}>Become A Part</NavLink>
         </section>
         <section>

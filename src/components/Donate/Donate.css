@@ -1,0 +1,73 @@
+.donate-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 30rem;
+  margin: 0.2rem;
+  z-index: 5;
+}
+
+.donate-input-name {
+  width: 100%;
+  height: 2.5rem;
+  margin: 0.1rem;
+  border-radius: 20px;
+  padding: 1px 5px;
+  background-color: #c2bab0;
+}
+
+.donate-input-info {
+  width: 47%;
+  height: 2.5rem;
+  margin: 0.1rem;
+  border-radius: 20px;
+  padding: 1px 5px;
+  background-color: #c2bab0;
+  /* #566046; */
+}
+
+.donate-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/licking-dog.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.donate-button {
+  text-align: center;
+  margin: 0.3rem;
+}
+
+.donate-button:focus {
+  outline: none;
+  background-color: #c2bab0;
+}
+
+.donate-bg {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(222, 207, 173, 0.605);
+}
+
+.donate-bg > * {
+  position: relative;
+  z-index: 2;
+  color: white;
+}

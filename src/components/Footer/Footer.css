@@ -8,3 +8,15 @@
 .info-section {
   margin: 0.3rem 0.5rem;
 }
+
+footer {
+  background-color: #f4dfc8da;
+  color: #7d6e5d;
+  width: 100vw;
+  margin-bottom: 0;
+}
+
+.copywright {
+  margin: 0;
+  padding: 0.3rem;
+}

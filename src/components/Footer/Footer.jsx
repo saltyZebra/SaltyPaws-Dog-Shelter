@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer({ year, name }) {
   return (
     <>
-      <main>
+      <footer>
         <section className="footer-section">
           <section className="info-section">
             <p>
@@ -34,10 +34,10 @@ function Footer({ year, name }) {
             </p>
           </section>
         </section>
-        <p>
+        <p className="copywright">
           © {year} {name}. All rights reserved.
         </p>
-      </main>
+      </footer>
     </>
   );
 }

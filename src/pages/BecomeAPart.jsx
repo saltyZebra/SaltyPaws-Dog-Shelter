@@ -1,13 +1,13 @@
 import React from "react";
-import BreedInfo from "../components/BecomeAPart/BreedInfo";
+import BreedInfo from "../components/BecomeAPart/Adopt";
 import "../components/BecomeAPart/BecomeAPart.css";
 
 function BecomeAPart() {
   return (
     <>
-      <h2>Become A Part of the Journey</h2>
-      <section>
-        <h3>Volunteer</h3>
+      <h1>Become A Part of the Journey</h1>
+      <section className="volunteer-section">
+        <h2>Volunteer</h2>
         <section>
           <p>
             There are many ways to make a difference at our shelter, and every
@@ -26,9 +26,10 @@ function BecomeAPart() {
           </p>
         </section>
       </section>
-      <h3>Adopt</h3>
+      <h2>Adopt</h2>
       <main className="adopt-section">
-        <section>
+        <section className="adopt-text">
+          <h3>Important!</h3>
           <p>
             We're so happy that you consider adopting one of our incredible dogs
             and let it become a member of you family. We want to ensure you that
@@ -39,13 +40,13 @@ function BecomeAPart() {
             of responsibility.
           </p>
           <p>
-            Please take a look at our breed info to the left. You are also
+            Please take a look at our breed info to the right. You are also
             welcome to visit us to talk and get guidance on your journey towards
             getting the best gift in life.
           </p>
         </section>
-        <section>
-          <h4>Find the breed that fits you</h4>
+        <section className="breed-section">
+          <h3>Find the breed that fits you</h3>
           <BreedInfo />
         </section>
       </main>

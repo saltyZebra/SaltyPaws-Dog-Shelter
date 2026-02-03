@@ -7,7 +7,7 @@ import NotFound from "./pages/NotFound";
 import BecomeAPart from "./pages/BecomeAPart";
 import DonatePage from "./pages/DonatePage";
 
-// Lista för alla aktuella hundar
+// Objekt/Lista för alla aktuella hundar
 const ourDogs = [
   {
     id: 1,

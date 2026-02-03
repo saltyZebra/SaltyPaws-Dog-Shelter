@@ -1,11 +1,16 @@
+main {
+  background-color: #7d6e5d;
+}
+
 .dog-li {
   display: flex;
   flex-direction: column;
   width: 25vw;
-  border: solid 1px grey;
+
   border-radius: 2vw;
   margin: 1rem;
   overflow: hidden;
+  background-color: #f4dfc825;
 }
 
 .dog-ul {

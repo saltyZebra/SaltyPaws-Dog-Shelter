@@ -1,15 +1,15 @@
 import React from "react";
+import DonateForm from "../components/Donate/DonateForm";
 
 function DonatePage() {
   return (
     <>
-      <h2>Donate</h2>
-      <form action="fill">
-        <input type="text" placeholder="First- and lastname" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Phone nr for swish" />
-      </form>
-      <button>Donate</button>
+      <article className="donate-page">
+        <section className="donate-bg">
+          <h2>Donate</h2>
+          <DonateForm />
+        </section>
+      </article>
     </>
   );
 }
