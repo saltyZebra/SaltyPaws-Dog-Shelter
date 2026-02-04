@@ -4,23 +4,27 @@ main {
 
 .dog-li {
   display: flex;
-  flex-direction: column;
-  width: 25vw;
-
-  border-radius: 2vw;
+  flex-direction: row;
   margin: 1rem;
-  overflow: hidden;
-  background-color: #f4dfc825;
 }
 
 .dog-ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
+.dog-info-section {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 0.5rem;
+}
+
 .dog-img {
-  margin: 0;
+  margin: 0.5rem;
+  border-right: 1px solid #c7b5a2;
+  padding-right: 3rem;
 }
 
 .dog-info {
