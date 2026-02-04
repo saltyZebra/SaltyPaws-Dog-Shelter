@@ -1,6 +1,7 @@
 import React from "react";
 import "./Donate.css";
 import { useState } from "react";
+import BackToHomeButton from "../Other/BackToHomeButton";
 
 function DonateForm() {
   const [donate, setDonate] = useState("");
@@ -49,7 +50,10 @@ function DonateForm() {
           <button className="donate-button">Donate</button>
         </form>
       ) : (
-        <p>Thank you {donate} for your donation!</p>
+        <section>
+          <p>Thank you {donate} for your donation!</p>
+          <BackToHomeButton />
+        </section>
       )}
     </>
   );

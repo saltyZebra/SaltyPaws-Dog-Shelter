@@ -16,8 +16,8 @@ function DogsList({ dogsArray }) {
       <ul className="dog-ul">
         {dogsArray.map((dog) => (
           <li key={dog.id} className="dog-li">
-            <section className="dog-img">
-              <img src={dog.image} />
+            <section className="dog-img-section">
+              <img src={dog.image} className="dog-img" />
             </section>
             <section className="dog-info-section">
               <h4>{dog.name}</h4>

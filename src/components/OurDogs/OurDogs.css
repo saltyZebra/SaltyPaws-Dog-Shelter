@@ -19,12 +19,19 @@ main {
   flex-direction: column;
   text-align: start;
   padding: 0.5rem;
+  width: 50vw;
 }
 
-.dog-img {
+.dog-img-section {
   margin: 0.5rem;
   border-right: 1px solid #c7b5a2;
   padding-right: 3rem;
+}
+
+.dog-img {
+  border-radius: 10px;
+  width: auto;
+  height: 45vh;
 }
 
 .dog-info {
