@@ -8,7 +8,7 @@ export async function fetchDogBreedsAPI() {
       },
     });
 
-    // om APIhämtning misslyckas - kastar error till catch
+    //
     if (!response.ok) {
       throw new Error(`Error: ${response.status}`);
     }

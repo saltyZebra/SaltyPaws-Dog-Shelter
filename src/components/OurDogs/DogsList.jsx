@@ -1,16 +1,8 @@
 import React from "react";
 import "./OurDogs.css";
-import { IoHeartOutline } from "react-icons/io5";
-import { IoHeartSharp } from "react-icons/io5";
-import { useState } from "react";
 
+//
 function DogsList({ dogsArray }) {
-  const [isFavorite, setIsFavorite] = useState(false);
-
-  const handleClick = () => {
-    setIsFavorite((prevIsFavorite) => !prevIsFavorite);
-  };
-
   return (
     <>
       <ul className="dog-ul">
@@ -28,11 +20,7 @@ function DogsList({ dogsArray }) {
               <section className="dog-info">
                 <h4>About</h4>
                 <p>{dog.personality}</p>
-                <span className="material-symbols-outlined">favorite</span>
               </section>
-              <p onClick={handleClick} style={{ cursor: "pointer" }}>
-                {isFavorite ? <IoHeartSharp /> : <IoHeartOutline />}
-              </p>
             </section>
           </li>
         ))}

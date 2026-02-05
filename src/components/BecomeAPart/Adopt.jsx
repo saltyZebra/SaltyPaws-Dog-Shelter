@@ -7,6 +7,7 @@ function Adopt() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  //
   useEffect(() => {
     fetchDogBreedsAPI()
       .then((data) => setBreeds(data))

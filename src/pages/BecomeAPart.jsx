@@ -1,6 +1,6 @@
 import React from "react";
-import BreedInfo from "../components/BecomeAPart/Adopt";
 import "../components/BecomeAPart/BecomeAPart.css";
+import Adopt from "../components/BecomeAPart/Adopt";
 
 function BecomeAPart() {
   return (
@@ -47,7 +47,7 @@ function BecomeAPart() {
         </section>
         <section className="breed-section">
           <h3>Find the breed that fits you</h3>
-          <BreedInfo />
+          <Adopt /> {/* */}
         </section>
       </main>
     </>

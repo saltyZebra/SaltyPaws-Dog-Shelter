@@ -3,24 +3,24 @@ import React, { useState } from "react";
 function SearchBar({ breeds }) {
   const [breedList, setBreedList] = useState("");
   const [showResults, setShowResults] = useState(false);
-  const [selectedBreed, setSelectedBreed] = useState(null); // håller hela breed-objektet för att kunna visa info
+  const [selectedBreed, setSelectedBreed] = useState(null); //
 
-  // Variabel för att filtrera genom alla breeds i listan - göra så att namnen matchar med lowercase
+  //
   const filteredBreeds = breeds.filter((breed) =>
     breed.name.toLowerCase().includes(breedList.toLowerCase())
   );
 
-  // Varje gång man skriver något i searchbaren ändras värdet som matchar listan med det event som är target
+  //
   const handleChange = (e) => {
     setBreedList(e.target.value);
-    setSelectedBreed(null);
     setShowResults(true);
+    setSelectedBreed(null);
   };
 
   const handleSelect = (breed) => {
-    setBreedList(breed.name); // visar namnet i input
-    setSelectedBreed(breed); // sparar breed info
-    setShowResults(false); // slutar visa resultat
+    setBreedList(breed.name);
+    setSelectedBreed(breed);
+    setShowResults(false);
   };
 
   return (
@@ -38,8 +38,7 @@ function SearchBar({ breeds }) {
 
       {showResults && breedList && (
         <ul className="dropdown-list">
-          {/* om det finns 1 eller fler breeds i listan som matchar resultat och lista 
-          - mappar igenom listan och skapar list-item för varje */}
+          {/* */}
           {filteredBreeds.length > 0 ? (
             filteredBreeds.map((breed) => (
               <li
@@ -51,12 +50,13 @@ function SearchBar({ breeds }) {
               </li>
             ))
           ) : (
-            // om inget matchar listan så visas nedan.
+            //
             <li className="no-results">No breeds found</li>
           )}
         </ul>
       )}
-      {selectedBreed && (
+      {/* */}
+      {selectedBreed ? (
         <section className="breed-info">
           <img
             className="breed-img"
@@ -66,7 +66,7 @@ function SearchBar({ breeds }) {
           <h4>{selectedBreed.name}</h4>
           <p>
             <b>Life span: </b>
-            {selectedBreed.life_span}
+            {selectedBreed.life_span} years
           </p>
           <p>
             <b>Description: </b>
@@ -77,7 +77,7 @@ function SearchBar({ breeds }) {
             {selectedBreed.temperament}
           </p>
         </section>
-      )}
+      ) : null}
     </section>
   );
 }
