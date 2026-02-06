@@ -22,8 +22,8 @@ This webbaplication represents the Salty Paws dog shelter. It displays the follo
 
 ## Requirements
 
-- Built on SPA with React Router
-- Fetch API data
-- Structured components and pages according to React rules
-- Using state to activate UI to the application
-- Using props to send data through components
+✅ Built on SPA with React Router
+✅ Fetch API data
+✅ Structured components and pages according to React rules
+✅ Using state to activate UI to the application
+✅ Using props to send data through components

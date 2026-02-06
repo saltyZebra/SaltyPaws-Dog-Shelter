@@ -5,6 +5,7 @@ import BackToHomeButton from "../Other/BackToHomeButton";
 
 function DonateForm() {
   const [donate, setDonate] = useState("");
+  const [loading, setLoading] = useState(false);
 
   //
   function handleSubmit(e) {
@@ -16,13 +17,18 @@ function DonateForm() {
     const name = formData.get("fullName");
     formElement.reset();
 
-    setDonate(name);
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+      setDonate(name);
+    }, 1500);
   }
 
   return (
     <>
       {/* */}
-      {donate === "" ? (
+      {donate === "" && !loading ? (
         <form
           onSubmit={handleSubmit}
           action={handleSubmit}
@@ -31,6 +37,7 @@ function DonateForm() {
           <input
             type="name"
             name="fullName"
+            required
             className="donate-input-name"
             placeholder="First- & lastname"
           />
@@ -38,6 +45,7 @@ function DonateForm() {
           <input
             type="email"
             name="email"
+            required
             className="donate-input-info"
             placeholder="Email"
           />
@@ -45,11 +53,16 @@ function DonateForm() {
           <input
             type="phone"
             name="phone"
+            required
             className="donate-input-info"
             placeholder="Phone nr for swish"
           />
           <button className="donate-button">Donate</button>
         </form>
+      ) : loading ? (
+        <section>
+          <p>Navigerar över dig till Swish...</p>
+        </section>
       ) : (
         <section>
           <p>Thank you {donate} for your donation!</p>
